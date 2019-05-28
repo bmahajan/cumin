@@ -48,7 +48,7 @@ export class Checkin extends Component {
 	const { navigate } = this.props.navigation;
 	return (
 	  <View style = {styles.container}>
-	  <Image source={require('../cumin.png')} style = {styles.image} />
+	  <Image source={require('../camera.png')} style = {styles.image} />
 	  {screen}
 	  </View>
 
@@ -62,13 +62,13 @@ const styles = StyleSheet.create({
 	height: '40%',
 	width: '75%',
 	resizeMode: "contain",
-	backgroundColor: '#F5FCFF',
+	backgroundColor: '#FFFFFF',
   },
   container: {
 	flex: 3,
 	justifyContent: 'flex-start',
 	alignItems: 'center',
-	backgroundColor: '#F5FCFF',
+	backgroundColor: '#FFFFFF',
   },
   button: {
 	marginRight: 10,

@@ -36,10 +36,10 @@ export class Default extends Component {
     return (
       <View style = {styles.container}>
       <Text style={styles.welcome}>
-      Hi, Welcome to Cumin
+      Hi, Welcome to Hack Texas
       </Text>
       <Text style = {styles.instructions}>
-      To Get Started with the camera, press the button below.
+      To check in with the camera, press the button below.
       </Text>
       <Button onPress={this.navigateQR} title="Camera">Navigate</Button>
       <Text style = {styles.welcome}>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     flex: 3,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
   },
   button: {
     marginRight: 10,
