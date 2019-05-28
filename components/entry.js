@@ -49,7 +49,7 @@ export class Entry extends Component {
 	const { navigate } = this.props.navigation;
 	return (
 	  <View style = {styles.container}>
-	  <Image source={require('../cumin.png')} style = {styles.image} />
+	  <Image source={require('../cumin_icon.png')} style = {styles.image} />
 	  {screen}
 	  </View>
 
@@ -63,16 +63,18 @@ const styles = StyleSheet.create({
 	height: '40%',
 	width: '75%',
 	resizeMode: "contain",
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
   },
   container: {
 	flex: 3,
 	justifyContent: 'flex-start',
 	alignItems: 'center',
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
   },
   button: {
 	marginRight: 10,
+	backgroundColor:'#AB80EE',
+	color: '#FFFFFF',
   },
   welcome: {
 	fontSize: 25,
@@ -80,7 +82,13 @@ const styles = StyleSheet.create({
   },
   instructions: {
 	textAlign: 'center',
-	color: '#333333',
+	color: '#FFFFFF',
 	marginBottom: 5,
+  },
+  mainTitle :{
+  	color : '#FFFFFF',
+  	textAlign: 'center',
+  	fontSize: 50,
+
   },
 });

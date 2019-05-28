@@ -70,18 +70,20 @@ const styles = StyleSheet.create({
 	flex: 3,
 	justifyContent: 'flex-start',
 	alignItems: 'center',
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
   },
   button: {
 	marginRight: 10,
+  backgroundColor:'#FF9999',
   },
   welcome: {
 	fontSize: 25,
 	margin: 10,
+  color: '#FFFFFF',
   },
   instructions: {
 	textAlign: 'center',
-	color: '#333333',
+	color: '#FFFFFF',
 	marginBottom: 5,
   },
 });
