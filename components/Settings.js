@@ -70,21 +70,23 @@ export class Settings extends Component {
 
   render() {
      let { supported, enabled} = this.state;
+     responseSupported = String(supported).charAt(0).toUpperCase() + String(supported).slice(1);
+     responseEnabled = String(enabled).charAt(0).toUpperCase() + String(enabled).slice(1);
     return (
       <View style = {styles.container}>
       <Text style={styles.welcome}>
       Volunteer Email
       </Text>
       <TextInput
-        style={{height: 40, width:300}}
+        style={styles.inputField}
         onChangeText={(text) => this.setState({text})}
         value={this.state.text}
       />
       <Button onPress={this.saveEmail} title="Next"></Button>
       <Text>{"\n"}</Text>
       <Text>{"\n"}</Text>
-      <Text style={styles.nfc}>{`Is NFC supported ? ${supported}`}</Text>
-      <Text style={styles.nfc}>{`Is NFC enabled (Android only)? ${enabled}`}</Text>
+      <Text style={styles.nfc}>{`Is NFC supported ? \n ${responseSupported}`}</Text>
+      <Text style={styles.nfc}>{`Is NFC enabled (Android only)? \n ${responseEnabled}`}</Text>
       <Text>{"\n"}</Text>
       <Text style={styles.nfc}>Set NFC Setting here: (Go to Connection preferences -> NFC)</Text>
       <Button style={{ marginTop: 20 }} onPress={this._goToNfcSetting} title="Go to NFC setting">
@@ -100,22 +102,30 @@ const styles = StyleSheet.create({
     flex: 3,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
+  },
+  inputField:{
+    height: 40, 
+    width:300,
+    color: '#404040',
+    backgroundColor: '#FFFFFF',
   },
   welcome: {
     marginTop: 50,
     fontSize: 25,
     marginBottom: 10,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: '#EE6CA7',
   },
   nfc: {
       fontSize: 25,
       margin: 10,
-      textAlign: 'center'
+      textAlign: 'center',
+      color: '#EE6CA7',
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: '#EE6CA7',
     marginBottom: 5,
   },
 });
