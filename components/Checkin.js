@@ -62,13 +62,13 @@ const styles = StyleSheet.create({
 	height: '40%',
 	width: '75%',
 	resizeMode: "contain",
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
   },
   container: {
 	flex: 3,
 	justifyContent: 'flex-start',
 	alignItems: 'center',
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
   },
   button: {
 	marginRight: 10,
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
   },
   instructions: {
 	textAlign: 'center',
-	color: '#333333',
+	color: '#FFFFFF',
+	backgroundColor: '#000000',
 	marginBottom: 5,
   },
 });
